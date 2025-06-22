@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About - Omdeep Interior Designer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+  
+
+  /* Global resets and base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-heading);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover,
+  a:focus {
+    color: #1d4ed8; /* darker blue */
+    outline: none;
+  }
+
+ 
+
+  .container-a {
+    max-width: 1200px;
+    padding: 2rem 1.5rem 4rem;
+    margin: 0 auto;
+  }
+
+  main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+  }
+
+  main p.lead {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    max-width: 720px;
+    margin-bottom: 3rem;
+  }
+
+  .cards-a {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+
+  article.card-a {
+    background: var(--color-card-bg);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s ease;
+  }
+  article.card-a:hover,
+  article.card-a:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+    outline: none;
+  }
+
+  article.card-a h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-primary);
+  }
+
+  article.card-a p {
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+  }
+
+  /* Responsive typography scaling */
+  @media (min-width: 640px) {
+    main-a h1 {
+      font-size: 3.75rem;
+    }
+    main-a p.lead {
+      font-size: 1.375rem;
+    }
+  }
+
+  /* Accessibility focus outline */
+  a:focus-visible,
+  button:focus-visible,
+  article.card:focus-within {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+</style>
+</head>
+<body>
+
+<main class="container-a" role="main">
+  <p class="lead">Crafting interiors that blend elegance and functionality with impeccable attention to detail. Omdeep Interiors brings your vision to life through inspired design and expert execution.</p>
+
+  <section class="cards-a" aria-label="Company information">
+    <article class="card-a" tabindex="0">
+      <h2>Our Mission</h2>
+      <p>To create timeless and sophisticated interiors that reflect each client’s unique style and elevate their everyday living experience.</p>
+    </article>
+
+    <article class="card-a" tabindex="0">
+      <h2>Our Vision</h2>
+      <p>Setting new standards in interior design by embracing innovation, sustainability, and unmatched craftsmanship.</p>
+    </article>
+
+    <article class="card-a" tabindex="0">
+      <h2>Our Values</h2>
+      <p>Passion for design, commitment to quality, collaboration with clients, and integrity in every project we undertake.</p>
+    </article>
+  </section>
+
+  <section style="margin-top: 4rem;">
+    <h2>Who We Are</h2>
+    <p style="max-width:720px; color:var(--color-text-secondary); font-size:1rem;">
+      Omdeep Interior Designer is a premier interior design company renowned for delivering unique and high-end residential and commercial interiors. Our team of experienced designers and project managers works closely with clients to ensure every detail aligns with their vision and lifestyle. From initial consultation through project completion, we prioritize creativity, quality, and sustainability.
+    </p>
+  </section>
+</main>
+</body>
+</html>
+
